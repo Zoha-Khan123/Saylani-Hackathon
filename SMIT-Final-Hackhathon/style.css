@@ -210,6 +210,7 @@ nav .toogle-btn {
   background-color: #b9ff66;
   padding: 10px;
   border-radius: 15px;
+  font-size:small;
 }
 
 /*----------------------- Responsive Sub-Heading-01 ------------------------ */
@@ -442,10 +443,10 @@ textarea::placeholder {
 @media screen and (max-width: 600px) {
   .contact-area textarea,
   .contact-area input {
-    width: 300px;
+    width: 200px;
   }
   .contact-page form {
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 }
 
