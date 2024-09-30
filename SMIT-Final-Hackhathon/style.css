@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  width: 90%;
+  padding: 3rem 4rem 0rem 4rem;
+}
+@media screen and (max-width: 1120px) {
+  body {
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .full-page {
+    padding: 0rem 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .full-page {
+    padding: 0rem 1rem;
+  }
+}
+/*--------------------- navbar --------------------------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+nav .nav-items {
+  display: flex;
+  gap: 3rem;
+}
+
+nav .nav-items a {
+  text-decoration: none;
+  align-content: center;
+  color: black;
+}
+
+nav .nav-items a button,
+.landing-page .text button {
+  width: 200px;
+  height: 55px;
+  border-radius: 15px;
+  border: 1px solid #191a23;
+  background-color: transparent;
+}
+
+nav .toogle-btn {
+  display: none;
+}
+
+/* ----------------------------- Responsive Navbar ----------------- */
+@media screen and (max-width: 1200px) {
+  nav .nav-items {
+    display: flex;
+    gap: 1.5rem;
+  }
+  nav .logo img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 950px) {
+  nav .nav-items {
+    position: absolute;
+    top: 95px;
+    right: 70px;
+    width: 300px;
+    text-align: center;
+    height: fit-content;
+    gap: 2rem;
+    padding: 2rem 0rem;
+    background-color: #b9ff66;
+    box-shadow: 5px 5px 3px black;
+    flex-direction: column;
+    display: none;
+    border-radius: 15px;
+  }
+
+  nav .toogle-btn {
+    display: block;
+  }
+  nav .toogle-btn i {
+    padding-right: 1rem;
+    font-size: xx-large;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav .nav-items {
+    right: 50px;
+    padding: 2rem;
+    top: 100px;
+    width: 200px;
+  }
+}
+
+/* --------------------------- Landing Page ------------------------- */
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+.landing-page .text {
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* column-gap: 100px; */
+}
+.landing-page .text h1 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.landing-page .text button {
+  width: 260px;
+  height: 68px;
+  margin-top: 1rem;
+  background-color: #191a23;
+  color: white;
+}
+.landing-page img {
+  height: 450px;
+  width: 500px;
+}
+
+/*----------------------- Responsive Landing Page ------------------------ */
+
+@media screen and (max-width: 1100px) {
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .landing-page .text {
+    margin-bottom: 2rem;
+    height: unset;
+  }
+  .landing-page .text .heading {
+    order: 1;
+  }
+  .landing-page .text .paragraph {
+    order: 3;
+  }
+  .landing-page .text .image {
+    order: 2;
+  }
+  .landing-page .text h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .landing-page .text h1 {
+    font-size: 45px;
+  }
+  .landing-page .text p {
+    font-size: small;
+  }
+  .landing-page .text button {
+    width: 80%;
+    margin: 1rem;
+  }
+  .landing-page img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* ------------------------------ Logos ----------------------------- */
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 2rem 0rem;
+  overflow: hidden;
+}
+
+/*----------------------- Responsive Logos ------------------------ */
+
+@media screen and (max-width: 900px) {
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ----------------------------- Sub-Heading-01 ------------------------ */
+.sub-heading-01,
+.sub-heading-02 {
+  display: flex;
+  gap: 4rem;
+  padding-top: 5rem;
+  align-items: center;
+  overflow: hidden;
+}
+.heading-01 {
+  background-color: #b9ff66;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/*----------------------- Responsive Sub-Heading-01 ------------------------ */
+
+@media screen and (max-width: 900px) {
+  .sub-heading-01,
+  .sub-heading-02 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sub-heading-01 .paragraph {
+    text-align: center;
+    padding: 0rem 1rem;
+  }
+
+  .responsive-br {
+    display: none;
+  }
+}
+
+/* --------------------------- Cards ------------------------------------ */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.card1,
+.card2 {
+  width: 100%;
+  background-color: #f3f3f3;
+  height: 250px;
+  border-radius: 40px;
+  padding: 3rem;
+  box-shadow: 0px 5px 2px;
+}
+
+.card2 {
+  background-color: #b9ff66;
+}
+.card1-heading,
+.card2-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.card1-heading h1 {
+  background-color: #b9ff66;
+}
+.card2-heading h1 {
+  background-color: #f3f3f3;
+}
+.card1-arrow,
+.card2-arrow {
+  display: flex;
+  padding: 2rem;
+}
+.card1-arrow p,
+.card2-arrow p {
+  padding-left: 1rem;
+  padding-top: 10px;
+  font-size: larger;
+}
+
+/*----------------------- Responsive Cards ------------------------ */
+
+@media screen and (max-width: 1120px) {
+  .cards {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .card1,
+  .card2 {
+    width: 80%;
+    height: 250px;
+  }
+  .card1-heading,
+  .card2-heading {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card1,
+  .card2 {
+    padding: 2rem;
+    height: 300px;
+    width: 85%;
+  }
+
+  .card1-heading,
+  .card2-heading {
+    display: block;
+    margin-top: 0rem;
+  }
+  .card1-heading h1,
+  .card2-heading h1 {
+    margin-bottom: 1rem;
+  }
+  .card1-arrow,
+  .card2-arrow {
+    padding-top: 0px;
+  }
+}
+/* <!---------------------- Process Block ------------------------> */
+.process-card-01 {
+  background-color: #b9ff66;
+  margin: 5rem 0rem;
+  padding: 4rem;
+  border-radius: 40px;
+  box-shadow: 0px 5px 2px;
+  overflow: hidden;
+}
+.process-card-01 .upper-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* <!-- For line under consultation --> */
+.process-card-01 .header-line {
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
+}
+.process-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.process-heading h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.process-heading h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.process-card-01 .lower-part {
+  margin-top: 1rem;
+}
+/* card-02 */
+.process-card-02 {
+  margin: 1rem 0rem;
+  padding: 2rem;
+}
+.process-card-02:nth-child(2) {
+  margin-top: -3rem;
+}
+
+/*----------------- Responsive Process Block -------------------- */
+@media screen and (max-width: 850px) {
+  .process-heading h1 {
+    font-size: xx-large;
+  }
+  .process-heading h2 {
+    font-size: larger;
+  }
+  .process-card-01 .upper-part img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .process-heading h1 {
+    font-size: x-large;
+  }
+  .process-heading h2 {
+    font-size: medium;
+  }
+  .process-card-02 {
+    padding: 1.5rem;
+  }
+  .process-card-01 .upper-part img {
+    width: 40px;
+  }
+}
+
+/* ---------------------- Contact Page -------------------------> */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.contact-page form {
+  padding: 4rem;
+}
+
+.radio-btns {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.contact-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-area textarea,
+.contact-area input {
+  border: 1px solid #c7c7c7;
+  width: 400px;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+.contact-area textarea {
+  height: 100px;
+}
+textarea::placeholder {
+  color: white;
+}
+.contact-area button {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: #191a23;
+  color: white;
+}
+
+/* ------------------ Contact Page Responsive -------------------  */
+
+@media screen and (max-width: 600px) {
+  .contact-area textarea,
+  .contact-area input {
+    width: 300px;
+  }
+  .contact-page form {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+}
+
+/* <-------------------------- Footer Block --------------------> */
+footer {
+  background-color: #191a23;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  margin-top: 7rem;
+  padding: 1rem 0rem;
+  overflow: hidden;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.first-line .links,
+.first-line .icons {
+  display: flex;
+  gap: 2rem;
+}
+.first-line .links a {
+  color: #ffffff;
+}
+.first-line .icons a i {
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  align-content: center;
+  color: black;
+}
+
+.second-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 3rem 2rem 3rem;
+}
+.second-line .contact-area {
+  display: flex;
+  gap: 1rem;
+}
+.second-line .contact-area h4 {
+  background-color: #b9ff66;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 25px;
+}
+.second-line .contact-area p {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+.second-line .buttons {
+  background-color: #292a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 600px;
+  height: 150px;
+}
+
+.second-line .buttons textarea,
+.second-line .buttons button {
+  background-color: #292a32;
+  padding-left: 2rem;
+  color: white;
+  width: 220px;
+  height: 60px;
+  border-radius: 14px;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  align-content: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.second-line .buttons button {
+  background-color: #b9ff66;
+  border: none;
+  color: black;
+  padding-left: 0rem;
+}
+
+/* For line under footer second-line */
+footer .line {
+  border-bottom: 2px solid #bbc7c7;
+  max-width: 90%;
+  margin: 40px auto;
+}
+.third-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  margin: 3rem 0rem;
+}
+.third-line .alright-p a {
+  color: white;
+}
+@media screen and (max-width: 1115px) {
+  footer {
+    margin: 5rem 3rem 0rem 3rem;
+  }
+  .first-line,
+  .second-line,
+  .third-line {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-line .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+
+  .first-line .links a {
+    text-decoration: none;
+  }
+
+  .second-line .contact-area {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .second-line .contact-area h4 {
+    border-radius: 15px;
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
+  }
+  .second-line .buttons {
+    margin-top: 2rem;
+  }
+  .third-line {
+    margin: 2rem 0rem 1rem 0rem;
+  }
+}
+@media screen and (max-width: 753px) {
+  footer {
+    margin: 5rem 0rem 0rem 0rem;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+  }
+
+  .second-line .buttons {
+    flex-direction: column;
+    justify-content: unset;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  .second-line .buttons textarea {
+    width: 300px;
+  }
+  .second-line .buttons button {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .second-line .buttons {
+    width: 95%;
+  }
+  .second-line .buttons textarea {
+    width: 250px;
+  }
+  .second-line .buttons button {
+    width: 280px;
+  }
+}
